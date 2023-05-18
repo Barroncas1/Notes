@@ -3,6 +3,8 @@ import { Container, Links } from "./style"
 import { Button } from "../../components/Button"
 import { Header } from "../../components/Header"
 import { Section } from "../../components/Section"
+import { Tag } from "../../components/Tag"
+import { ButtonText } from "../../components/ButtonText"
 
 
 export function Details(){
@@ -10,14 +12,20 @@ export function Details(){
     <Container>
       <Header />
 
+      <ButtonText title="Excluir nota" />
+
       <Section title="Links úteis">
         <Links>
           <li><a href="#">Link 1</a></li>
           <li><a href="#">Link 2</a></li>
           <li><a href="#">Link 3</a></li>
-          
         </Links>
+      </Section>
 
+      <Section title="Marcadores">
+        <Tag title="express" />
+        <Tag title="node" />
+        <Tag title="react" />
       </Section>
 
       <Button title="Voltar" />  
