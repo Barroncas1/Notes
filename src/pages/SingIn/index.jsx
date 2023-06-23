@@ -3,8 +3,15 @@ import {FiLogIn, FiMail, FiLock} from 'react-icons/fi'
 import { Link } from "react-router-dom";
 import {Input} from "../../components/Input"
 import {Button} from '../../components/Button'
+import { useContext } from "react";
+
+import { MyContext } from "../../myContext";
 
 export function SingIn(){
+
+    const data = useContext(MyContext)
+    console.log("Meu Contexto =>", data)
+
     return(
         <Container>
             <Form>
