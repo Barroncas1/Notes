@@ -32,9 +32,6 @@ export function SingUp(){
                 alert("Não foi possivel cadrastar")
             }
         })
-
-
-
     }
 
     return(
