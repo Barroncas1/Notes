@@ -102,7 +102,7 @@ export function New(){
                         }
                         <NoteItem 
                             placeholder="Novo link"
-                            $$isNew
+                            $isNew
                             value={newLink}
                             onChange={e => setNewLink(e.target.value)}
                             onClick={handleAddLink}
@@ -122,7 +122,7 @@ export function New(){
                                 ))
                             }
                             <NoteItem 
-                                $$isNew 
+                                $isNew
                                 placeholder="Nova tag"
                                 onChange={e => setNewTag(e.target.value)}
                                 value={newTag}
